@@ -9,7 +9,7 @@ CT_LOGS_SCHEMA      =  "https://www.gstatic.com/ct/log_list/log_list_schema.json
 # RFC: https://tools.ietf.org/html/rfc6962
 
 #STH = Signed Tree Head. Section 4.3 of RFC
-CT_STH_URL = "ct/v1/get-sth"
+CT_STH_URL = "/ct/v1/get-sth"
 
 # Retrieve Entries from Log. Section 4.6 of RFC
 # User String Templates to Make it Easier to Do Substitutions

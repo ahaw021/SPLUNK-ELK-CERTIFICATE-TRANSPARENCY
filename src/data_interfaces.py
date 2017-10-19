@@ -5,7 +5,7 @@ import urllib3
 # Set Timeout to 2 seconds so we don't slow down the script for non responsive servers
 
 urllib3.disable_warnings()
-HTTP_CLIENT = urllib3.PoolManager(timeout=10.0)
+HTTP_CLIENT = urllib3.PoolManager(timeout=5.0)
 
 def write_file(path,name,data):
     file = open(path+"/"+name,'w')
