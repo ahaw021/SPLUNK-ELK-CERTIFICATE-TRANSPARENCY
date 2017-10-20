@@ -21,8 +21,10 @@ def parse_ct_records(ct_entries):
         # print("Converted extra_data as Plaintext: \r \n")
         # print(extra_data)
         #print("\r\n")
+        print("-----Start-----------\r\n")
         parse_leaf_cert(leaf_cert)
         parse_chain_certs(extra_data)
+        print("-----End-----------\r\n")
 
 def parse_leaf_cert_crypto(leaf_cert):
     #print(leaf_cert)
@@ -102,4 +104,4 @@ with open('small_set.json', encoding='utf-8') as data_file:
     small_set  = json.loads(data_file.read())
 
 parse_ct_records(single_record)
-#parse_ct_records(small_set)
+parse_ct_records(small_set)
